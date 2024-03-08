@@ -15,7 +15,7 @@ model:
     unet_config:
       target: ldm.modules.diffusionmodules.openaimodel.UNetModel
       params:
-        image_size: 64
+        image_size: 320 #64
         in_channels: 3
         out_channels: 3
         model_channels: 224
@@ -39,7 +39,7 @@ model:
       params:
         embed_dim: 3
         n_embed: 8192
-        ckpt_path: models/first_stage_models/vq-f4/model.ckpt
+        # ckpt_path: models/first_stage_models/vq-f4/model.ckpt
         ddconfig:
           double_z: false
           z_channels: 3
